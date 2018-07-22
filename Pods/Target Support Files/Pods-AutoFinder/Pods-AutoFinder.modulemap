@@ -1,0 +1,6 @@
+framework module Pods_AutoFinder {
+  umbrella header "Pods-AutoFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

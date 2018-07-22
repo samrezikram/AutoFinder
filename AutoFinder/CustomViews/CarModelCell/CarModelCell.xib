@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Libertad-Bold.otf">
+            <string>Libertad-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Rec"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarModelCell" rowHeight="107" id="Dc9-AR-siD" customClass="CarModelCell" customModule="AutoFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dc9-AR-siD" id="nza-c9-UM2">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dy0-tc-5Bc" customClass="BorderedView" customModule="AutoFinder" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="784" height="90.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Model" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PKi-eD-MNn">
+                                <rect key="frame" x="0.0" y="0.0" width="784" height="68"/>
+                                <color key="backgroundColor" red="0.79893269328119654" green="0.89623668113665367" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ng2-fq-5nC" userLabel="CollectionTime">
+                                <rect key="frame" x="0.0" y="65.5" width="784" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCn-Tj-naK">
+                                        <rect key="frame" x="0.0" y="0.0" width="784" height="25"/>
+                                        <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="16"/>
+                                        <color key="textColor" red="0.14982997228014572" green="0.54018866951144229" blue="0.75095999375181344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9765684787511858" green="0.98124341529109305" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tCn-Tj-naK" firstAttribute="leading" secondItem="Ng2-fq-5nC" secondAttribute="leading" id="7gU-pa-mEd"/>
+                                    <constraint firstItem="tCn-Tj-naK" firstAttribute="centerX" secondItem="Ng2-fq-5nC" secondAttribute="centerX" id="QbJ-0k-laE"/>
+                                    <constraint firstAttribute="bottom" secondItem="tCn-Tj-naK" secondAttribute="bottom" id="RNn-y9-LcW"/>
+                                    <constraint firstAttribute="height" constant="25" id="WIW-xS-TAj"/>
+                                    <constraint firstAttribute="trailing" secondItem="tCn-Tj-naK" secondAttribute="trailing" id="WmN-lW-4yd"/>
+                                    <constraint firstItem="tCn-Tj-naK" firstAttribute="top" secondItem="Ng2-fq-5nC" secondAttribute="top" id="YFb-qd-Bgf"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car2" translatesAutoresizingMaskIntoConstraints="NO" id="2uq-Iq-0dv" userLabel="logoImage" customClass="CircularImageView" customModule="AutoFinder" customModuleProvider="target">
+                                <rect key="frame" x="8" y="10" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="McI-UJ-fez"/>
+                                    <constraint firstAttribute="width" constant="45" id="cJJ-zE-ZUB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.90196078431372551" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ng2-fq-5nC" firstAttribute="leading" secondItem="Dy0-tc-5Bc" secondAttribute="leading" id="CmO-fz-6rM"/>
+                            <constraint firstAttribute="trailing" secondItem="PKi-eD-MNn" secondAttribute="trailing" id="HzM-Ho-H6v"/>
+                            <constraint firstItem="PKi-eD-MNn" firstAttribute="top" secondItem="Dy0-tc-5Bc" secondAttribute="top" id="VS8-Qn-EDz"/>
+                            <constraint firstItem="PKi-eD-MNn" firstAttribute="leading" secondItem="Dy0-tc-5Bc" secondAttribute="leading" id="dCh-Ea-1cb"/>
+                            <constraint firstItem="tCn-Tj-naK" firstAttribute="top" secondItem="PKi-eD-MNn" secondAttribute="bottom" constant="-2.5" id="dOM-zM-tZC"/>
+                            <constraint firstItem="Ng2-fq-5nC" firstAttribute="centerX" secondItem="Dy0-tc-5Bc" secondAttribute="centerX" id="djR-5r-3uV"/>
+                            <constraint firstAttribute="trailing" secondItem="Ng2-fq-5nC" secondAttribute="trailing" id="eYh-Qz-45e"/>
+                            <constraint firstItem="2uq-Iq-0dv" firstAttribute="top" secondItem="Dy0-tc-5Bc" secondAttribute="top" constant="10" id="qOt-gD-y20"/>
+                            <constraint firstAttribute="bottom" secondItem="Ng2-fq-5nC" secondAttribute="bottom" id="sjm-sN-lYx"/>
+                            <constraint firstItem="2uq-Iq-0dv" firstAttribute="leading" secondItem="Dy0-tc-5Bc" secondAttribute="leading" constant="8" id="zEK-TH-FCz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Dy0-tc-5Bc" secondAttribute="trailing" constant="8" id="6IF-OE-yMi"/>
+                    <constraint firstItem="Dy0-tc-5Bc" firstAttribute="top" secondItem="nza-c9-UM2" secondAttribute="top" constant="8" id="Hqb-Bg-Fia"/>
+                    <constraint firstAttribute="bottom" secondItem="Dy0-tc-5Bc" secondAttribute="bottom" constant="8" id="enY-4x-A7k"/>
+                    <constraint firstItem="Dy0-tc-5Bc" firstAttribute="leading" secondItem="nza-c9-UM2" secondAttribute="leading" constant="8" id="j2a-bf-gtE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="carLogo" destination="2uq-Iq-0dv" id="ZH5-y7-L2Y"/>
+                <outlet property="carName" destination="PKi-eD-MNn" id="e9y-Es-GHv"/>
+                <outlet property="pageNumber" destination="tCn-Tj-naK" id="KeC-MK-nf4"/>
+                <outlet property="parentView" destination="Dy0-tc-5Bc" id="12a-rO-9hS"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="379"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car2" width="17" height="13"/>
+    </resources>
+</document>
